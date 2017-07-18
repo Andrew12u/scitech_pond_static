@@ -1,0 +1,14 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand";
+  background-color: rgb(46,47,44);
+}
+
+#overridden_navbarstyles {
+  margin-bottom: 0px;
+}
+Navbar {
+  z-index: 1;
+}
