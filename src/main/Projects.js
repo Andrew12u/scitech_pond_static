@@ -6,6 +6,9 @@ import '../css/Projects.css';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 import Tooltip from 'react-bootstrap/lib/Tooltip';
 import OverlayTrigger from 'react-bootstrap/lib/OverlayTrigger'
+import Col from 'react-bootstrap/lib/Col';
+import Grid from 'react-bootstrap/lib/Grid';
+import Row from 'react-bootstrap/lib/Row';
 import { LinkContainer } from 'react-router-bootstrap';
 
 var projects = require('../config/projects.json');
@@ -66,25 +69,35 @@ class Projects extends Component {
 
   render() {
     return (
-      <div>
-        <div className="Project-list-title-header">
-          <h2>Project Entries</h2>
-        </div>
+      <Grid>
         <div>
-          <BootstrapTable data={this.state.project_list}
-                          striped={false}
-                          hover={false}
-                          tableStyle={{
-                            background: 'rgb(60,60,60)',
-                            color: 'rgb(230,230,226)'
-                          }}>
-            <TableHeaderColumn dataField="name" dataSort={true} isKey={true} dataFormat={this.postFormatter}> Project </TableHeaderColumn>
-            <TableHeaderColumn dataField="type" dataSort={true} dataFormat={this.typeFormatter}>Type</TableHeaderColumn>
-            <TableHeaderColumn dataField="description" dataSort={true} dataFormat={this.descriptionFormatter}>Description</TableHeaderColumn>
-            <TableHeaderColumn dataField="date" dataSort={true} dataFormat={this.dateFormatter}>Date</TableHeaderColumn>
-          </BootstrapTable>
+          <Row>
+            <Col xs={12}>
+              <div className="Project-list-title-header">
+                <h2>Project Entries</h2>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12}>
+              <div>
+                <BootstrapTable data={this.state.project_list}
+                                striped={false}
+                                hover={false}
+                                tableStyle={{
+                                  background: 'rgb(60,60,60)',
+                                  color: 'rgb(230,230,226)'
+                                }}>
+                  <TableHeaderColumn dataField="name" dataSort={true} isKey={true} dataFormat={this.postFormatter}> Project </TableHeaderColumn>
+                  <TableHeaderColumn dataField="type" dataSort={true} dataFormat={this.typeFormatter}>Type</TableHeaderColumn>
+                  <TableHeaderColumn dataField="description" dataSort={true} dataFormat={this.descriptionFormatter}>Description</TableHeaderColumn>
+                  <TableHeaderColumn dataField="date" dataSort={true} dataFormat={this.dateFormatter}>Date</TableHeaderColumn>
+                </BootstrapTable>
+              </div>
+            </Col>
+          </Row>
         </div>
-      </div>
+      </Grid>
     );
   }
 }

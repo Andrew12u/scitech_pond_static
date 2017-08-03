@@ -11,3 +11,19 @@ a:visited {
     color: rgb(230,230,226);
     font-family: "Quicksand";
 }
+
+.Blog-pie-chart {
+  width: 75%;
+  height: 75%;
+  float: left;
+}
+
+.Blog-pie-chart-title {
+  color: rgb(230,230,226);
+  font-family: "Quicksand";
+}
+
+.Blog-pie-chart-data {
+  color: rgb(230,230,226);
+  font-family: "Quicksand";
+}

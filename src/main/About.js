@@ -47,7 +47,7 @@ class About extends React.Component {
                 <div className="faq-question">
                   <h4 className="faq-title">What do you seek to accomplish with this site?</h4>
                   <div className="faq-answer">
-                    <p> I seek knowledge.  I seek to demonstrate knowledge. I seek to document my efforts to find it. I seek to share what I find with others. </p>
+                    <p> I seek knowledge.  I seek to demonstrate knowledge; I seek to document my efforts to find it; I seek to share what I find with others. </p>
                   </div>
                 </div>
               </Col>

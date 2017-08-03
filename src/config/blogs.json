@@ -2,5 +2,25 @@
   "blogs": [
     { "name": "test_name_1", "type": "test_type_1", "sub_type": "test_subtype_1", "description": "test_description_1 test_description_1 test_description_1 test_description_1 test_description_1", "date": "2017-01-01"},
     { "name": "test_name_2", "type": "test_type_2", "sub_type": "test_subtype_2", "description": "test_description_2", "date": "2017-01-02"}
+  ],
+  "meta": [
+    {
+      "value": 300,
+      "color":"#F7464A",
+      "highlight": "#FF5A5E",
+      "label": "Red"
+    },
+    {
+      "value": 300,
+      "color":"#46BFBD",
+      "highlight": "#FF5A5E",
+      "label": "Blue"
+    },
+    {
+      "value": 300,
+      "color":"#222222",
+      "highlight": "#FF5A5E",
+      "label": "Orange"
+    }
   ]
 }

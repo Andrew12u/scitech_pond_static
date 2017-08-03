@@ -6,7 +6,26 @@ import '../css/Blogs.css';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 import Tooltip from 'react-bootstrap/lib/Tooltip';
 import OverlayTrigger from 'react-bootstrap/lib/OverlayTrigger';
+import Col from 'react-bootstrap/lib/Col';
+import Grid from 'react-bootstrap/lib/Grid';
+import Row from 'react-bootstrap/lib/Row';
 import { LinkContainer } from 'react-router-bootstrap';
+//chart.js
+import Chart from 'chart.js'
+Chart.defaults.global.responsive = true;
+//react-chartjs
+var PieChart = require("react-chartjs").Pie;
+var pieOptions = {
+    animatable: true,
+    segmentShowStroke : true,
+    segmentStrokeColor : "#fff",
+    segmentStrokeWidth : 2,
+    percentageInnerCutout : 0,
+    animationSteps : 100,
+    animationEasing : "easeOutBounce",
+    animateRotate : true
+};
+
 
 
 
@@ -16,8 +35,10 @@ class Blogs extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      blog_list: blogs["blogs"]
+      blog_list: blogs["blogs"],
+      blog_data: blogs["meta"]
     };
+    this.generateDataLegend = this.generateDataLegend.bind(this);
   }
 
   postFormatter = (cell, row) => {
@@ -65,28 +86,68 @@ class Blogs extends Component {
       </div>
     );
   }
+  generateDataLegend(){
+    let blogData = [];
+
+    for(let i=0; i<this.state.blog_data.length; i++){
+      blogData.push(<div key={i}><span style={{color: this.state.blog_data[i]["color"]}}>{this.state.blog_data[i]["label"]}</span> : {this.state.blog_data[i]["value"]}</div>);
+    }
+
+
+
+    return blogData;
+  }
 
   render() {
     return (
-      <div className="blog_list_background">
-        <div className="Blog-post-title-header">
-          <h2>Blog Entries</h2>
-        </div>
-        <div>
-          <BootstrapTable data={this.state.blog_list}
-                          striped={false}
-                          hover={false}
-                          tableStyle={{
-                            background: 'rgb(60,60,60)',
-                            color: 'rgb(230,230,226)'
-                          }}>
-            <TableHeaderColumn dataField="name" dataSort={true} isKey={true} dataFormat={this.postFormatter}> Blog Post</TableHeaderColumn>
-            <TableHeaderColumn dataField="type" dataSort={true} dataFormat={this.typeFormatter}>Type</TableHeaderColumn>
-            <TableHeaderColumn dataField="description" dataSort={true} dataFormat={this.descriptionFormatter}>Description</TableHeaderColumn>
-            <TableHeaderColumn dataField="date" dataSort={true} dataFormat={this.dateFormatter}>Date</TableHeaderColumn>
-          </BootstrapTable>
-        </div>
-      </div>
+      <Grid>
+        <Row>
+          <Col xs={12}>
+            <div className="Blog-pie-chart-title">
+              <h2>Breakdown</h2>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={3}>
+            <div className="Blog-pie-chart">
+              <PieChart data={this.state.blog_data} options={pieOptions}/>
+            </div>
+          </Col>
+          <Col xs={3}>
+            <div className="Blog-pie-chart-data">
+              {this.generateDataLegend()}
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12}>
+            <div className="Blog-post-title-header">
+              <h2>Blog Entries</h2>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12}>
+            <div className="blog_list_background">
+              <div>
+                <BootstrapTable data={this.state.blog_list}
+                                striped={false}
+                                hover={false}
+                                tableStyle={{
+                                  background: 'rgb(60,60,60)',
+                                  color: 'rgb(230,230,226)'
+                                }}>
+                  <TableHeaderColumn dataField="name" dataSort={true} isKey={true} dataFormat={this.postFormatter}> Blog Post</TableHeaderColumn>
+                  <TableHeaderColumn dataField="type" dataSort={true} dataFormat={this.typeFormatter}>Type</TableHeaderColumn>
+                  <TableHeaderColumn dataField="description" dataSort={true} dataFormat={this.descriptionFormatter}>Description</TableHeaderColumn>
+                  <TableHeaderColumn dataField="date" dataSort={true} dataFormat={this.dateFormatter}>Date</TableHeaderColumn>
+                </BootstrapTable>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Grid>
     );
   }
 }
