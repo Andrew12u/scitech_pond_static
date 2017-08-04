@@ -92,9 +92,6 @@ class Blogs extends Component {
     for(let i=0; i<this.state.blog_data.length; i++){
       blogData.push(<div key={i}><span style={{color: this.state.blog_data[i]["color"]}}>{this.state.blog_data[i]["label"]}</span> : {this.state.blog_data[i]["value"]}</div>);
     }
-
-
-
     return blogData;
   }
 

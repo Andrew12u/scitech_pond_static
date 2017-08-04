@@ -2,3 +2,32 @@
   color: rgb(230,230,226);
   font-family: "Quicksand";
 }
+a:link {
+    color: rgb(170,172,250);
+}
+
+/* visited link */
+a:visited {
+    color: rgb(170,172,210);
+}
+
+.Project-post-title-header{
+    color: rgb(230,230,226);
+    font-family: "Quicksand";
+}
+
+.Project-pie-chart {
+  width: 75%;
+  height: 75%;
+  float: left;
+}
+
+.Project-pie-chart-title {
+  color: rgb(230,230,226);
+  font-family: "Quicksand";
+}
+
+.Project-pie-chart-data {
+  color: rgb(230,230,226);
+  font-family: "Quicksand";
+}
