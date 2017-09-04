@@ -1,26 +1,13 @@
 {
   "projects": [
-    { "name":"test_name_1", "type": "test_type_1", "description": "test_description_1", "date": "2017-01-01"},
-    { "name":"test_name_2", "type": "test_type_2", "description": "test_description_2", "date": "2017-01-02"}
+    { "name":"Starship_Generator", "type": "AWS", "sub_type": "ReactJS", "description": "Demonstrate AWS SQS and SNS by procedurally generating starships and captains.", "date": "2017-01-01"}
   ],
   "meta": [
     {
-      "value": 300,
+      "value": 1,
       "color":"#F7464A",
       "highlight": "#FF5A5E",
-      "label": "Red"
-    },
-    {
-      "value": 300,
-      "color":"#46BFBD",
-      "highlight": "#FF5A5E",
-      "label": "Blue"
-    },
-    {
-      "value": 300,
-      "color":"#222222",
-      "highlight": "#FF5A5E",
-      "label": "Orange"
+      "label": "AWS"
     }
   ]
 }

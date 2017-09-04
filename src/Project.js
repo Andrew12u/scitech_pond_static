@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import EmptyObject from './EmptyObject';
-import test_name_1 from './projects/test_name_1';
-import test_name_2 from './projects/test_name_2';
+import Starship_Generator from './projects/Starship_Generator';
 
 const PROJECTS = {
-   test_name_1: test_name_1,
-   test_name_2: test_name_2
+   Starship_Generator: Starship_Generator
 }
 
 
