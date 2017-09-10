@@ -186,7 +186,23 @@ class Login extends React.Component {
         <Row>
           <Col xs={12}>
             <div className="Benefits-For-Logging-In">
-              <h2>Why Log In?</h2>
+              <h2>Still in-progress )-:</h2>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12}>
+            <div className="Benefits-For-Logging-In">
+              <ul>
+                <li> This aspect of the site still needs a bit of work.  Be sure to check back later! </li>
+              </ul>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12}>
+            <div className="Benefits-For-Logging-In">
+              <h2>Eventual Benefits of Logging In?</h2>
             </div>
           </Col>
         </Row>
