@@ -17,7 +17,7 @@ class a_killer_insertion_sort extends React.Component {
          <Grid>
             <Row>
               <Col md={12}>
-                <h1 className="Blog-Headers"> "A Kiler Insertion Sort" </h1>
+                <h1 className="Blog-Headers"> "A Killer Insertion Sort" </h1>
               </Col>
             </Row>
             <Row>
