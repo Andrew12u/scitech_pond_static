@@ -30,7 +30,7 @@ class a_killer_insertion_sort extends React.Component {
                 <p className="Blog-Text">
                   I remember being in high school and spending my lunch time playing a card
                   game called "killer" in the art room. Odd name for a card game, but essentially it is the Hawaiian equivalent
-                  of <a href="https://en.wikipedia.org/wiki/Ti%E1%BA%BFn_l%C3%AAn" target="_blank"> Ti&ecirc;n l&ecirc;n </a>.
+                  of <a href="https://en.wikipedia.org/wiki/Ti%E1%BA%BFn_l%C3%AAn" target="_blank" rel="noopener noreferrer"> Ti&ecirc;n l&ecirc;n </a>.
                 </p>
                 <p className="Blog-Text">
                   One of the things that kind of stands out in the game is how fluid the gameplay was.  If everyone knew what they were
@@ -77,7 +77,7 @@ class a_killer_insertion_sort extends React.Component {
               <Col md={6}>
                 <h5 className="Blog-Headers"> Insertion Sort in C </h5>
                 <div>
-                  <iframe src="https://repl.it/Ko4I/0" height="600px" width="400px">
+                  <iframe src="https://repl.it/Ko4I/0" height="600px" width="400px" title="Insertion Sort in C">
                     <script src="//repl.it/embed/Ko4I/0.js"></script>
                   </iframe>
                 </div>
@@ -85,7 +85,7 @@ class a_killer_insertion_sort extends React.Component {
               <Col md={6}>
                 <h5 className="Blog-Headers"> Insertion Sort in C# </h5>
                 <div>
-                  <iframe src="https://repl.it/Ko8J/0" height="600px" width="400px">
+                  <iframe src="https://repl.it/Ko8J/0" height="600px" width="400px" title="Insertion Sort in C">
                     <script src="//repl.it/embed/Ko8J/0.js"></script>
                   </iframe>
                 </div>
@@ -95,7 +95,7 @@ class a_killer_insertion_sort extends React.Component {
               <Col md={6}>
                 <h5 className="Blog-Headers"> Insertion Sort in GO </h5>
                 <div>
-                  <iframe src="https://repl.it/KoiP/1" height="600px" width="400px">
+                  <iframe src="https://repl.it/KoiP/1" height="600px" width="400px" title="Insertion Sort in GO">
                     <script src="//repl.it/embed/KoiP/1.js"></script>
                   </iframe>
                 </div>
@@ -103,7 +103,7 @@ class a_killer_insertion_sort extends React.Component {
               <Col md={6}>
                 <h5 className="Blog-Headers"> Insertion Sort in Java </h5>
                 <div>
-                  <iframe src="https://repl.it/Kn5t/1" height="600px" width="400px">
+                  <iframe src="https://repl.it/Kn5t/1" height="600px" width="400px" title="Insertion Sort in Java">
                     <script src="//repl.it/embed/Kn5t/1.js"></script>
                   </iframe>
                 </div>
@@ -113,7 +113,7 @@ class a_killer_insertion_sort extends React.Component {
               <Col md={6}>
                 <h5 className="Blog-Headers"> Insertion Sort in JavaScript </h5>
                 <div>
-                  <iframe src="https://repl.it/KncT/0" height="600px" width="400px">
+                  <iframe src="https://repl.it/KncT/0" height="600px" width="400px" title="Insertion Sort in JavaScript">
                     <script src="//repl.it/embed/KncT/0.js"></script>
                   </iframe>
                 </div>
@@ -121,7 +121,7 @@ class a_killer_insertion_sort extends React.Component {
               <Col md={6}>
                 <h5 className="Blog-Headers"> Insertion Sort in PHP </h5>
                 <div>
-                  <iframe src="https://repl.it/KoqF/0" height="600px" width="400px">
+                  <iframe src="https://repl.it/KoqF/0" height="600px" width="400px" title="Insertion Sort in PHP">
                     <script src="//repl.it/embed/KoqF/0.js"></script>
                   </iframe>
                 </div>
@@ -131,7 +131,7 @@ class a_killer_insertion_sort extends React.Component {
               <Col md={6}>
                 <h5 className="Blog-Headers"> Insertion Sort in Python </h5>
                 <div>
-                  <iframe src="https://repl.it/KnV6/5" height="600px" width="400px">
+                  <iframe src="https://repl.it/KnV6/5" height="600px" width="400px" title="Insertion Sort in Python">
                     <script src="//repl.it/embed/KnV6/5.js"></script>
                   </iframe>
                 </div>
@@ -139,7 +139,7 @@ class a_killer_insertion_sort extends React.Component {
               <Col md={6}>
                 <h5 className="Blog-Headers"> Insertion Sort in Ruby </h5>
                 <div>
-                  <iframe src="https://repl.it/Koq3/4" height="600px" width="400px">
+                  <iframe src="https://repl.it/Koq3/4" height="600px" width="400px" title="Insertion Sort in Ruby">
                     <script src="//repl.it/embed/Koq3/4.js"></script>
                   </iframe>
                 </div>
@@ -242,31 +242,30 @@ class a_killer_insertion_sort extends React.Component {
                   How would you arrange your hand to reflect an optimal, winning, strategy?
                 </p><br/><br/>
 
-                <p className="Blog-Text"><span><strong>First arrange hand based upon the strongest possible combos</strong></span></p>
-                <p className="Blog-Text">
-                  <ol className="Blog-Text">
-                    <li>Starting with the second card to the left, is the card higher (factoring in suite) than the Q &diams; ? No.  Insert to the left.
-                      <ul><li> [9 &diams; , Q &diams; , 9 &#9828; , 8 &#9831; , 6 &#9828; , 9 &#9831; , 4 &#9828; , J &hearts; , 3 &#9828; , 10 &#9831; , A &#9831; , 2 &#9831; , K &diams;] </li> </ul>
-                    </li>
-                    <li>For the third card,  is the card higher (factoring in suite) than the Q &diams; and cards to the left of it? No.  Insert to the left.
-                      <ul><li> [9 &#9828; , 9 &diams; , Q &diams; , 8 &#9831; , 6 &#9828; , 9 &#9831; , 4 &#9828; , J &hearts; , 3 &#9828; , 10 &#9831; , A &#9831; , 2 &#9831; , K &diams;] </li> </ul>
-                    </li>
-                    <li>For the fourth card, is it &gt; Q &diams; ? No. Is it &gt; 9 &diams;  ? No. Is it &gt; 9 &#9828; ? No. Insert to the left.
-                      <ul><li> [8 &#9831; , 9 &#9828; , 9 &diams; , Q &diams; , 6 &#9828; , 9 &#9831; , 4 &#9828; , J &hearts; , 3 &#9828; , 10 &#9831; , A &#9831; , 2 &#9831; , K &diams;] </li> </ul>
-                    </li>
-                    <li>For the fifth card, is it &gt; Q &diams; ? Using the same logic above, insert card into the appropriate place.
-                      <ul><li> [6 &#9828; , 8 &#9831; , 9 &#9828; , 9 &diams; , Q &diams; , 9 &#9831; , 4 &#9828; , J &hearts; , 3 &#9828; , 10 &#9831; , A &#9831; , 2 &#9831; , K &diams;] </li> </ul>
-                    </li>
-                    <li> etc. etc.
-                    </li>
-                    <li>You should now have the following.
-                      <ul><li> [3 &#9828; , 4 &#9828; , 6 &#9828; , 8 &#9831; , 9 &#9828; 9 &#9831; , 9 &diams; 10 &#9831; , J &hearts; , Q &diams; , K &diams; , A &#9831; , 2 &#9831; ] </li> </ul>
-                    </li>
-                  </ol>
-                </p><br/>
+                <p className="Blog-Text"><span><strong>First arrange hand based upon the strongest possible combos</strong></span></p><br/>
+
+                <ol className="Blog-Text">
+                  <li>Starting with the second card to the left, is the card higher (factoring in suite) than the Q &diams; ? No.  Insert to the left.
+                    <ul><li> [9 &diams; , Q &diams; , 9 &#9828; , 8 &#9831; , 6 &#9828; , 9 &#9831; , 4 &#9828; , J &hearts; , 3 &#9828; , 10 &#9831; , A &#9831; , 2 &#9831; , K &diams;] </li> </ul>
+                  </li>
+                  <li>For the third card,  is the card higher (factoring in suite) than the Q &diams; and cards to the left of it? No.  Insert to the left.
+                    <ul><li> [9 &#9828; , 9 &diams; , Q &diams; , 8 &#9831; , 6 &#9828; , 9 &#9831; , 4 &#9828; , J &hearts; , 3 &#9828; , 10 &#9831; , A &#9831; , 2 &#9831; , K &diams;] </li> </ul>
+                  </li>
+                  <li>For the fourth card, is it &gt; Q &diams; ? No. Is it &gt; 9 &diams;  ? No. Is it &gt; 9 &#9828; ? No. Insert to the left.
+                    <ul><li> [8 &#9831; , 9 &#9828; , 9 &diams; , Q &diams; , 6 &#9828; , 9 &#9831; , 4 &#9828; , J &hearts; , 3 &#9828; , 10 &#9831; , A &#9831; , 2 &#9831; , K &diams;] </li> </ul>
+                  </li>
+                  <li>For the fifth card, is it &gt; Q &diams; ? Using the same logic above, insert card into the appropriate place.
+                    <ul><li> [6 &#9828; , 8 &#9831; , 9 &#9828; , 9 &diams; , Q &diams; , 9 &#9831; , 4 &#9828; , J &hearts; , 3 &#9828; , 10 &#9831; , A &#9831; , 2 &#9831; , K &diams;] </li> </ul>
+                  </li>
+                  <li> etc. etc.
+                  </li>
+                  <li>You should now have the following.
+                    <ul><li> [3 &#9828; , 4 &#9828; , 6 &#9828; , 8 &#9831; , 9 &#9828; 9 &#9831; , 9 &diams; 10 &#9831; , J &hearts; , Q &diams; , K &diams; , A &#9831; , 2 &#9831; ] </li> </ul>
+                  </li>
+                </ol>
 
                 <p className="Blog-Text">
-                  This is essentially <a href=""> insertion sort </a>, right?  You are taking the second card, and placing it relative to the cards to the left of it.  You do not really need to worry about suites at this point,
+                  This is essentially <a href="https://en.wikipedia.org/wiki/Insertion_sort" target="_blank" rel="noopener noreferrer"> insertion sort </a>, right?  You are taking the second card, and placing it relative to the cards to the left of it.  You do not really need to worry about suites at this point,
                   because you will probably take into consideration suite precedence during your insertion sort, and simply because you are simply arranging your cards just to see what you have, combo-wise.
                 </p><br/><br/>
 
