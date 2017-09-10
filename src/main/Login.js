@@ -99,6 +99,7 @@ class Login extends React.Component {
           </Col>
         </Row>
         <Form>
+          <fieldset disabled>
           <Row>
             <Col md={11}>
               <FormGroup
@@ -176,10 +177,11 @@ class Login extends React.Component {
                 <Button className="btn btn-primary btn-large centerButton" onClick={this.handleSubmit}> Submit </Button>
               </Col>
               <Col md={4}>
-                <div>Need an account? Please <u><a href="/register" className="Labels">register</a></u>. </div>
+                <div>Need an account? Please <u><a href="#" className="Labels">register</a></u>. </div>
               </Col>
             </FormGroup>
           </Row>
+          </fieldset>
         </Form>
         <Row>
           <Col xs={12}>
@@ -192,7 +194,7 @@ class Login extends React.Component {
           <Col xs={12}>
             <div className="Benefits-For-Logging-In">
               <ul>
-                <li> Once you log in, you will be able to access demo projects and some 'special' content;  Although there isn't any at the moment, so...check back later! </li>
+                <li> Once you log in, you will be able to access demo projects and some 'special' content;  Although there isn&#39;t any at the moment, so...check back later! </li>
               </ul>
             </div>
           </Col>
