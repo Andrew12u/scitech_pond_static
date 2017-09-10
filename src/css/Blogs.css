@@ -1,15 +1,20 @@
 a:link {
-    color: rgb(170,172,250);
+  color: rgb(170,172,250);
 }
 
 /* visited link */
 a:visited {
-    color: rgb(170,172,210);
+  color: rgb(170,172,210);
 }
 
 .Blog-post-title-header{
-    color: rgb(230,230,226);
-    font-family: "Quicksand";
+  color: rgb(230,230,226);
+  font-family: "Quicksand";
+}
+
+.Benefits-For-Logging-In{
+  color: rgb(230,230,226);
+  font-family: "Quicksand";
 }
 
 .Blog-pie-chart {

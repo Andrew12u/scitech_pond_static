@@ -112,6 +112,7 @@ class Blogs extends Component {
             </div>
           </Col>
           <Col xs={3}>
+            <h5 className="Blog-post-title-header">Language : # of blogs showing code</h5>
             <div className="Blog-pie-chart-data">
               {this.generateDataLegend()}
             </div>

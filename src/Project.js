@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import EmptyObject from './EmptyObject';
-import Starship_Generator from './projects/Starship_Generator';
 
 const PROJECTS = {
-   Starship_Generator: Starship_Generator
 }
 
 

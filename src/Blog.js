@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import EmptyObject from './EmptyObject';
-import test_name_1 from './blogs/test_name_1';
-import test_name_2 from './blogs/test_name_2';
+import a_killer_insertion_sort from './blogs/a_killer_insertion_sort';
 
 const BLOGS = {
-   test_name_1: test_name_1,
-   test_name_2: test_name_2
+   a_killer_insertion_sort: a_killer_insertion_sort
 }
 
 

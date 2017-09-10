@@ -181,94 +181,25 @@ class Login extends React.Component {
             </FormGroup>
           </Row>
         </Form>
+        <Row>
+          <Col xs={12}>
+            <div className="Benefits-For-Logging-In">
+              <h2>Why Log In?</h2>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12}>
+            <div className="Benefits-For-Logging-In">
+              <ul>
+                <li> Once you log in, you will be able to access demo projects and some 'special' content;  Although there isn't any at the moment, so...check back later! </li>
+              </ul>
+            </div>
+          </Col>
+        </Row>
       </Grid>
     )
   }
 }
 
 export default Login;
-/*
-
-<Row>
-  <Col xs={12}>
-    <Form>
-      <FormGroup
-        controlId="loginUsernameFormInput"
-        validationState={this.getUsernameValidationState()}>
-        <Col md={11}>
-          <Col md={2} componentClass={ControlLabel} className="Labels">
-            Preferred Username*
-          </Col>
-          <Col md={5}>
-            <FormControl
-              type="text"
-              name="user_username"
-              placeholder="Please Enter Your Username"
-              onChange={this.handleLoginChange}
-              required="true" />
-            <FormControl.Feedback />
-          </Col>
-        </Col>
-        <Col md={9} mdOffset={2}>
-          <HelpBlock>Username must be at least four characters.</HelpBlock>
-        </Col>
-      </FormGroup>
-
-      <FormGroup
-        controlId="loginEmailAddressFormInput"
-        validationState={this.getEmailValidationState()}>
-        <Col md={11}>
-          <Col md={2} componentClass={ControlLabel} className="Labels">
-            E-mail Address*
-          </Col>
-          <Col md={5}>
-            <FormControl
-              type="email"
-              name="user_email_address"
-              placeholder="Please Enter Your E-mail Address"
-              onChange={this.handleLoginChange}
-              required="true" />
-            <FormControl.Feedback />
-          </Col>
-        </Col>
-        <Col md={9} mdOffset={2}>
-          <HelpBlock>Email address cannot be empty</HelpBlock>
-        </Col>
-      </FormGroup>
-
-      <FormGroup
-        controlId="loginPasswordFormInput"
-        validationState={this.getPasswordValidationState()}>
-        <Col md={11}>
-          <Col md={2} componentClass={ControlLabel} className="Labels">
-            Password*
-          </Col>
-          <Col md={5}>
-            <FormControl
-              type="password"
-              name="user_password"
-              placeholder="Please Enter Your Password"
-              onChange={this.handleLoginChange}
-              required="true" />
-            <FormControl.Feedback />
-          </Col>
-        </Col>
-        <Col md={9} mdOffset={2}>
-          <HelpBlock><p>Password must beat at least 8 characters</p>
-          <p>and contain at least one capital letter, digit, and symbol</p></HelpBlock>
-        </Col>
-      </FormGroup>
-
-      <FormGroup
-        controlId="loginSubmitAndRegister">
-        <Col md={1} mdOffset={2}>
-          <Button className="btn btn-primary btn-large centerButton" onClick={this.handleSubmit}> Submit </Button>
-        </Col>
-        <Col md={4}>
-          <div>Need an account? Please <u><a href="/register" className="Labels">register</a></u>. </div>
-        </Col>
-      </FormGroup>
-    </Form>
-  </Col>
-</Row>
-*/
