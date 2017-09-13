@@ -138,6 +138,7 @@ class Register extends React.Component {
              </Col>
            </Row>
            <Form>
+             <fieldset disabled>
              <Row>
                <FormGroup
                  controlId="registerUsernameFormInput"
@@ -241,6 +242,7 @@ class Register extends React.Component {
                  </Col>
                </FormGroup>
              </Row>
+             </fieldset>
            </Form>
            <br/>
            <br/>
