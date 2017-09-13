@@ -1,13 +1,3 @@
-.Blog-Headers {
-  color: rgb(230,230,226);
-  font-family: "Quicksand";
-}
-
-.Blog-Text {
-  color: rgb(230,230,226);
-  font-family: "Quicksand";
-}
-
 .gif_content {
   background-image: url("../img/Insertion_Sort_GIF.gif");
   background-repeat: no-repeat;

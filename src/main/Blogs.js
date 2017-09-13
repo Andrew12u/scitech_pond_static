@@ -42,12 +42,15 @@ class Blogs extends Component {
   }
 
   postFormatter = (cell, row) => {
-    let tooltip = (<Tooltip id={`tooltip-${row.name}`}><strong>{`${row.name}`}</strong></Tooltip>);
+    let formattedName = row.name.replace(/_/g, " ");
+
+
+    let tooltip = (<Tooltip id={`tooltip-${row.name}`}><strong>{`${formattedName}`}</strong></Tooltip>);
     return (
       <div>
         <LinkContainer to={`/blog/${row.name}`} >
           <OverlayTrigger placement="top" overlay={tooltip}>
-            <a className="blog_link"> {cell} </a>
+            <a className="blog_link" href={cell}> {formattedName} </a>
           </OverlayTrigger>
         </LinkContainer>
       </div>
@@ -106,12 +109,12 @@ class Blogs extends Component {
           </Col>
         </Row>
         <Row>
-          <Col xs={3}>
+          <Col xs={6}>
             <div className="Blog-pie-chart">
               <PieChart data={this.state.blog_data} options={pieOptions}/>
             </div>
           </Col>
-          <Col xs={3}>
+          <Col xs={6}>
             <h5 className="Blog-post-title-header">Language : # of blogs showing code</h5>
             <div className="Blog-pie-chart-data">
               {this.generateDataLegend()}

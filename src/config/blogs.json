@@ -1,6 +1,7 @@
 {
   "blogs": [
-    { "name":"a_killer_insertion_sort", "type": "Algorithm Analysis", "description": "Demonstrates insertion sort for a popular card game.", "date": "2017-09-09"}
+    { "name":"a_killer_insertion_sort", "type": "Algorithm Analysis", "description": "Demonstrates insertion sort for a popular card game.", "date": "2017-09-09"},
+    { "name":"Enabling_SSL_for_a_Static_S3_Website", "type": "S3", "description": "Goes over how to enable SSL for a static S3 website.", "date": "2017-09-13"}
   ],
   "meta": [
     {

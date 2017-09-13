@@ -33,7 +33,7 @@ class About extends React.Component {
                 <div className="faq-question">
                   <h4 className="faq-title">What is this site is about?</h4>
                   <div className="faq-answer">
-                    <p> The aim of this website is to provide a safe place to demonstrate technical, mathematical and scientific priciples.</p>
+                    <p> The aim of this website is to provide a safe place to demonstrate technical, mathematical and scientific principles.</p>
                     <p> It is one thing to read material on a particular subject, but in order to distill that raw <em>data</em> into <strong>knowledge</strong> takes
                         quite a bit more effort. Hopefully by developing and maintaining this website, I can not only demonstrate knowledge for myself, but also share
                         it with others. </p>

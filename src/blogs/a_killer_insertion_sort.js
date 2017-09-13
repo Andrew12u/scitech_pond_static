@@ -9,6 +9,7 @@ import Row from 'react-bootstrap/lib/Row';
 
 //My CSS stuff
 import "./css/a_killer_insertion_sort.css"
+import "./css/General_Blog.css"
 
 
 class a_killer_insertion_sort extends React.Component {
@@ -323,7 +324,7 @@ class a_killer_insertion_sort extends React.Component {
               <Col md={12}>
               <p className="Blog-Text">
                 As you can see, while one run of insertion sort might be enough to ascertain the presence of most combinations, it is isn&#39;t quite able to give us a straight optimized Killer hand straight out the gate.
-                There exists a set of strategies (or heurestics) that must be applied.  Hopefully in future blog posts, we will be able to see such things in action.
+                There exists a set of strategies (or heuristics) that must be applied.  Hopefully in future blog posts, we will be able to see such things in action.
               </p>
               </Col>
             </Row>
