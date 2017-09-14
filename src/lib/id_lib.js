@@ -106,10 +106,14 @@ export function confirmUserRegistration(username, confirmation_code){
   };
   let cognitoUser = new CognitoUser(userData);
   cognitoUser.confirmRegistration(confirmation_code, true, function(err, result) {
+    /*
+    // For some reason, err is thrown if request takes too long.
+    // this prevents confirmation_code from going through
     if (err) {
       alert(err);
       return;
     }
+    */
     console.log('call result: ' + result);
   });
 }

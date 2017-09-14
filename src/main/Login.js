@@ -99,7 +99,7 @@ class Login extends React.Component {
           </Col>
         </Row>
         <Form>
-          <fieldset disabled>
+          <fieldset>
           <Row>
             <Col md={11}>
               <FormGroup

@@ -138,7 +138,7 @@ class Register extends React.Component {
              </Col>
            </Row>
            <Form>
-             <fieldset disabled>
+             <fieldset>
              <Row>
                <FormGroup
                  controlId="registerUsernameFormInput"
@@ -253,7 +253,7 @@ class Register extends React.Component {
            </Modal.Header>
            <Modal.Body>
              <h4>Howdy!</h4>
-             <p>Thank you for registering! Please check your email and provide the confirmation code below.</p>
+             <p>Thank you for registering! Please check your email (including spam) and provide the confirmation code below.</p>
              <p>After registering, you will need to <a href="/login"> login </a>.</p>
 
              <Form action="/login" onSubmit={this.handleConfirmation}>
@@ -292,153 +292,3 @@ class Register extends React.Component {
 }
 
 export default Register;
-
-//=============================================================================
-//=============================================================================
-//=============================================================================
-/*
-
-   <div>
-      <h1>Register</h1>
-      <Form>
-
-        <FormGroup
-          controlId="registerUsernameFormInput"
-          validationState={this.getUsernameValidationState()}>
-          <Col md={11} mdOffset={1}>
-            <Col md={2} componentClass={ControlLabel}>
-              Preferred Username*
-            </Col>
-            <Col md={5}>
-              <FormControl
-                type="text"
-                name="user_username"
-                placeholder="Please Enter Your Username"
-                onChange={this.handleRegisterChange}
-                required="true" />
-              <FormControl.Feedback />
-            </Col>
-          </Col>
-          <Col md={9} mdOffset={3}>
-            <HelpBlock>Username must be at least four characters.</HelpBlock>
-          </Col>
-        </FormGroup>
-
-        <FormGroup
-          controlId="registerEmailAddressFormInput">
-          <Col md={11} mdOffset={1}>
-            <Col md={2} componentClass={ControlLabel}>
-              E-mail Address*
-            </Col>
-            <Col md={5}>
-              <FormControl
-                type="email"
-                name="user_email_address"
-                placeholder="Please Enter Your E-mail Address"
-                onChange={this.handleRegisterChange}
-                required="true" />
-            </Col>
-          </Col>
-          <Col md={11} mdOffset={1}>
-          <br/>
-          </Col>
-        </FormGroup>
-        <FormGroup
-          controlId="registerPasswordFormInput"
-          validationState={this.getPasswordValidationState()}>
-          <Col md={11} mdOffset={1}>
-            <Col md={2} componentClass={ControlLabel}>
-              Password*
-            </Col>
-            <Col md={5}>
-              <FormControl
-                type="password"
-                name="user_password"
-                placeholder="Please Enter Your Password"
-                onChange={this.handleRegisterChange}
-                required="true" />
-              <FormControl.Feedback />
-            </Col>
-          </Col>
-          <Col md={9} mdOffset={3}>
-            <HelpBlock><p>Password must beat at least 8 characters</p>
-            <p>and contain at least one capital letter, digit, and symbol</p></HelpBlock>
-          </Col>
-        </FormGroup>
-
-        <FormGroup
-          controlId="registerPasswordConfirmationFormInput"
-          validationState={this.getPasswordConfirmationValidationState()}>
-          <Col md={11} mdOffset={1}>
-            <Col md={2} componentClass={ControlLabel}>
-              Confirm Password*
-            </Col>
-            <Col md={5}>
-              <FormControl
-                type="password"
-                name="user_password_confirmed"
-                placeholder="Please Enter Your Password Again"
-                onChange={this.handleRegisterChange}
-                required="true" />
-              <FormControl.Feedback />
-            </Col>
-          </Col>
-          <Col md={9} mdOffset={3}>
-            <HelpBlock>The password you just entered should match</HelpBlock>
-          </Col>
-        </FormGroup>
-
-
-        <FormGroup
-          controlId="registerSubmitButton">
-          <Col md={6} mdOffset={3}>
-            <Button className="btn btn-primary btn-large centerButton" onClick={this.handleSubmit}> Submit </Button>
-          </Col>
-        </FormGroup>
-      </Form>
-
-      <br/>
-      <br/>
-
-      <Modal show={this.state.show_modal} onHide={this.closeModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>Registration Confirmation</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <h4>Howdy!</h4>
-          <p>Thank you for registering! Please check your email and provide the confirmation code below.</p>
-          <p>After registering, you will need to <a href="/login"> login </a>.</p>
-
-          <Form action="/login" onSubmit={this.handleConfirmation}>
-            <FormGroup
-              controlId="confirmationCodeInput"
-              validationState={this.getConfirmationCodeValidationState()}>
-
-              <FormControl
-                type="text"
-                name="confirmation_code"
-                placeholder="Please Enter Your Confirmation Code"
-                onChange={this.handleRegisterChange}
-                required="true" />
-              <FormControl.Feedback />
-              <HelpBlock>Should be greater than 4 digits</HelpBlock>
-            </FormGroup>
-            <br/>
-
-            <FormGroup
-              controlId="registerConfirmationButton">
-              <Button className="btn btn-primary btn-large centerButton" type="submit"> Submit </Button>
-            </FormGroup>
-
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button className="btn btn-primary btn-large centerButton"
-            type="submit"
-            onClick={this.handleResendConfirmation}> Resend Confirmation </Button>
-          <Button onClick={this.closeModal}>Close</Button>
-        </Modal.Footer>
-    </Modal>
-
-   </div>
-*/
