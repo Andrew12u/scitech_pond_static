@@ -354,7 +354,7 @@ class D3_Part_1_The_Basics extends React.Component {
               In particular, we will go over how to create a dynamic bar graph React Component and relate it to D3.
             </p><br/>
             <p className="Blog-Text">
-              For more information, I recommend checking out the references section<sup>[1] [2]</sup>. most of what you see here is a result of the work that others have already done.
+              For more information, I recommend checking out the references section<sup>[2] [3]</sup>. most of what you see here is a result of the work that others have already done.
             </p><br/>
           </Col>
         </Row>
@@ -598,8 +598,8 @@ componentDidUpdate(){
         <Row>
           <ul className="Blog-Text">
             <li>[1] : <a href="https://en.wikipedia.org/wiki/D3.js"> https://en.wikipedia.org/wiki/D3.js </a> </li>
-            <li>[2] : <a href="https://medium.com/@Elijah_Meeks/interactive-applications-with-react-d3-f76f7b3ebc71"> Elijah Meek&#39;s Blog </li>
-            <li>[3] : <a href="https://bl.ocks.org/mbostock/3885304"> Mike Bostock&#39;s example on bl.ocks.org </li>
+            <li>[2] : <a href="https://medium.com/@Elijah_Meeks/interactive-applications-with-react-d3-f76f7b3ebc71"> Elijah Meek&#39;s Blog </a></li>
+            <li>[3] : <a href="https://bl.ocks.org/mbostock/3885304"> Mike Bostock&#39;s example on bl.ocks.org </a></li>
           </ul>
         </Row>
       </Grid>
