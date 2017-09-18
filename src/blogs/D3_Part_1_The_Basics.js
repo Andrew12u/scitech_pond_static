@@ -599,7 +599,7 @@ componentDidUpdate(){
           <ul className="Blog-Text">
             <li>[1] : <a href="https://en.wikipedia.org/wiki/D3.js"> https://en.wikipedia.org/wiki/D3.js </a> </li>
             <li>[2] : <a href="https://medium.com/@Elijah_Meeks/interactive-applications-with-react-d3-f76f7b3ebc71"> Elijah Meek&#39;s Blog </li>
-            <li>[3] : <a href="https://bl.ocks.org/mbostock/3885304"> Mike Bostock&#39;s example on bl.ocks.org/li>
+            <li>[3] : <a href="https://bl.ocks.org/mbostock/3885304"> Mike Bostock&#39;s example on bl.ocks.org </li>
           </ul>
         </Row>
       </Grid>
