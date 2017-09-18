@@ -1,0 +1,23 @@
+.axis--y line{
+  stroke: rgb(230,230,226);
+}
+
+.axis--y path{
+  stroke: rgb(230,230,226);
+}
+
+.axis--y text{
+  fill: rgb(230,230,226);
+}
+
+.axis--x line{
+  stroke: rgb(230,230,226);
+}
+
+.axis--x path{
+  stroke: rgb(230,230,226);
+}
+
+.axis--x text{
+  fill: rgb(230,230,226);
+}
