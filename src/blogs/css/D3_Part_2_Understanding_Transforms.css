@@ -1,0 +1,21 @@
+.square {
+    stroke: black;
+    stroke-width: 1;
+}
+
+text {
+    font-family: monospace;
+    font-size: 9pt;
+}
+line {
+    stroke-width: 1;
+    stroke: white;
+}
+.Vertices-Header {
+  color: #FF0000;
+  font-family: "Quicksand";
+}
+.Vertices-Predicted-Header {
+  color: blue;
+  font-family: "Quicksand";
+}

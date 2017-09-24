@@ -3,11 +3,14 @@ import EmptyObject from './EmptyObject';
 import a_killer_insertion_sort from './blogs/a_killer_insertion_sort';
 import Enabling_SSL_for_a_Static_S3_Website from './blogs/Enabling_SSL_for_a_Static_S3_Website';
 import D3_Part_1_The_Basics from './blogs/D3_Part_1_The_Basics';
+//import D3_Part_2_Understanding_SVG_Transforms from './blogs/D3_Part_2_Understanding_SVG_Transforms';
+import D3_Part_2_Understanding_Transforms from './blogs/D3_Part_2_Understanding_Transforms'
 
 const BLOGS = {
    a_killer_insertion_sort: a_killer_insertion_sort,
    Enabling_SSL_for_a_Static_S3_Website: Enabling_SSL_for_a_Static_S3_Website,
-   D3_Part_1_The_Basics: D3_Part_1_The_Basics
+   D3_Part_1_The_Basics: D3_Part_1_The_Basics,
+   D3_Part_2_Understanding_Transforms: D3_Part_2_Understanding_Transforms
 }
 
 
