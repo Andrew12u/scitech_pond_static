@@ -194,7 +194,16 @@ class Login extends React.Component {
           <Col xs={12}>
             <div className="Benefits-For-Logging-In">
               <ul>
-                <li> Once you log in, you will be able to access demo projects and some 'special' content;  Although there isn&#39;t any at the moment, so...check back later! </li>
+                <li> Once you log in, you will be able to access demo projects and some 'special' content!
+                  <ul>
+                    <li> Including
+                      <ul>
+                        <li>A dynamic version of Minesweeper</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
               </ul>
             </div>
           </Col>

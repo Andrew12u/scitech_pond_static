@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import EmptyObject from './EmptyObject';
+//Projects
+import Minesweeper from './projects/minesweeper/Minesweeper';
 
 const PROJECTS = {
+  Minesweeper: Minesweeper
 }
 
 

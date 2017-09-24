@@ -19,7 +19,7 @@ var pieOptions = {
     animatable: true,
     segmentShowStroke : true,
     segmentStrokeColor : "#fff",
-    segmentStrokeWidth : 2,
+    segmentStrokeWidth : 0,
     percentageInnerCutout : 0,
     animationSteps : 100,
     animationEasing : "easeOutBounce",
@@ -109,12 +109,12 @@ class Blogs extends Component {
           </Col>
         </Row>
         <Row>
-          <Col xs={6}>
+          <Col md={6}>
             <div className="Blog-pie-chart">
               <PieChart data={this.state.blog_data} options={pieOptions}/>
             </div>
           </Col>
-          <Col xs={6}>
+          <Col md={6} smHidden xsHidden>
             <h5 className="Blog-post-title-header">Language : # of blogs showing code</h5>
             <div className="Blog-pie-chart-data">
               {this.generateDataLegend()}
@@ -129,7 +129,7 @@ class Blogs extends Component {
           </Col>
         </Row>
         <Row>
-          <Col xs={12}>
+          <Col md={12}>
             <div className="blog_list_background">
               <div>
                 <BootstrapTable data={this.state.blog_list}
@@ -141,8 +141,8 @@ class Blogs extends Component {
                                 }}>
                   <TableHeaderColumn dataField="name" dataSort={true} isKey={true} dataFormat={this.postFormatter}> Blog Post</TableHeaderColumn>
                   <TableHeaderColumn dataField="type" dataSort={true} dataFormat={this.typeFormatter}>Type</TableHeaderColumn>
-                  <TableHeaderColumn dataField="description" dataSort={true} dataFormat={this.descriptionFormatter}>Description</TableHeaderColumn>
-                  <TableHeaderColumn dataField="date" dataSort={true} dataFormat={this.dateFormatter}>Date</TableHeaderColumn>
+                  <TableHeaderColumn dataField="description" dataSort={true} dataFormat={this.descriptionFormatter} columnClassName="hidden-xs" className="hidden-xs">Description</TableHeaderColumn>
+                  <TableHeaderColumn dataField="date" dataSort={true} dataFormat={this.dateFormatter} columnClassName="hidden-xs" className="hidden-xs">Date</TableHeaderColumn>
                 </BootstrapTable>
               </div>
             </div>

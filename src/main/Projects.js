@@ -104,12 +104,12 @@ class Projects extends Component {
             </Col>
           </Row>
           <Row>
-            <Col xs={3}>
+            <Col md={6}>
               <div className="Project-pie-chart">
                 <PieChart data={this.state.project_data} options={pieOptions}/>
               </div>
             </Col>
-            <Col xs={3}>
+            <Col md={6} smHidden xsHidden>
               <div className="Project-pie-chart-data">
                 {this.generateDataLegend()}
               </div>
@@ -134,8 +134,8 @@ class Projects extends Component {
                                 }}>
                   <TableHeaderColumn dataField="name" dataSort={true} isKey={true} dataFormat={this.postFormatter}> Project </TableHeaderColumn>
                   <TableHeaderColumn dataField="type" dataSort={true} dataFormat={this.typeFormatter}>Type</TableHeaderColumn>
-                  <TableHeaderColumn dataField="description" dataSort={true} dataFormat={this.descriptionFormatter}>Description</TableHeaderColumn>
-                  <TableHeaderColumn dataField="date" dataSort={true} dataFormat={this.dateFormatter}>Date</TableHeaderColumn>
+                  <TableHeaderColumn dataField="description" dataSort={true} dataFormat={this.descriptionFormatter} columnClassName="hidden-xs" className="hidden-xs">Description</TableHeaderColumn>
+                  <TableHeaderColumn dataField="date" dataSort={true} dataFormat={this.dateFormatter} columnClassName="hidden-xs" className="hidden-xs">Date</TableHeaderColumn>
                 </BootstrapTable>
               </div>
             </Col>

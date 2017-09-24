@@ -1,0 +1,58 @@
+import React from 'react';
+
+/*REACT Bootstrap Stuff*/
+import FormGroup from 'react-bootstrap/lib/FormGroup';
+import FormControl from 'react-bootstrap/lib/FormControl';
+import Form from  'react-bootstrap/lib/Form';
+import ControlLabel from 'react-bootstrap/lib/ControlLabel';
+import Col from 'react-bootstrap/lib/Col';
+import HelpBlock from 'react-bootstrap/lib/HelpBlock';
+import Button from  'react-bootstrap/lib/Button';
+import Grid from 'react-bootstrap/lib/Grid';
+import Row from 'react-bootstrap/lib/Row';
+import ListGroup from 'react-bootstrap/lib/ListGroup';
+import ListGroupItem from 'react-bootstrap/lib/ListGroupItem';
+
+//My CSS stuff
+import "./css/General_Blog.css"
+import "./css/A_Blog_Legacy.css"
+
+class A_Blog_Legacy extends React.Component {
+  constructor(props){
+     super(props);
+  }
+  render() {
+    return(
+      <Grid>
+        <Row>
+          <Col md={12}>
+            <h3 className="Blog-Headers"> A Blog Legacy </h3>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12}>
+            <p className="Blog-Text">
+              Did you know I used to have blogspot blog? I bet you did!
+            </p><br/>
+            <p className="Blog-Text">
+              Well, now you can check out that old blog <a href="http://scitechpond.blogspot.com/"
+              target="_blank" rel="noopener noreferrer">here</a> too! Two blogs for the price of one!
+              How lucky.
+            </p><br/>
+            <p className="Blog-Text">
+              But seriously, I talked about some TSQL, C, and Java stuff in there, but rather than count
+              the multiple entries within the blog breakdown, I will just count each language as being
+              referenced once.
+            </p><br/>
+            <p className="Blog-Text">
+              And apologies about the poor audio, heh.
+            </p><br/>
+          </Col>
+        </Row>
+      </Grid>
+
+    );
+  }
+}
+
+export default A_Blog_Legacy;

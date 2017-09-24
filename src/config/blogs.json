@@ -3,11 +3,12 @@
     { "name":"a_killer_insertion_sort", "type": "Algorithm Analysis", "description": "Demonstrates insertion sort for a popular card game.", "date": "2017-09-09"},
     { "name":"Enabling_SSL_for_a_Static_S3_Website", "type": "S3", "description": "Goes over how to enable SSL for a static S3 website.", "date": "2017-09-13"},
     { "name":"D3_Part_1_The_Basics", "type": "D3", "description": "Creating a D3 Bar Chart, wrapped in a React Component", "date": "2017-09-18"},
-    { "name":"D3_Part_2_Understanding_Transforms", "type": "D3", "description": "Understanding the SVG transform attribute", "date": "2017-09-23"}
+    { "name":"D3_Part_2_Understanding_Transforms", "type": "D3", "description": "Understanding the SVG transform attribute", "date": "2017-09-23"},
+    { "name":"A_Blog_Legacy", "type": "Old Stuff", "description": "My Old Blog!", "date": "2017-09-24"}
   ],
   "meta": [
     {
-      "value": 1,
+      "value": 2,
       "color":"#713e77",
       "highlight": "#FF5A5E",
       "label": "C"
@@ -25,7 +26,7 @@
       "label": "GO"
     },
     {
-      "value": 1,
+      "value": 2,
       "color":"#ffd2d2",
       "highlight": "#FF5A5E",
       "label": "Java"
@@ -53,6 +54,12 @@
       "color":"#f6fafb",
       "highlight": "#FF5A5E",
       "label": "Ruby"
+    },
+    {
+      "value": 1,
+      "color":"#800000",
+      "highlight": "#FF5A5E",
+      "label": "TSQL"
     }
   ]
 }
