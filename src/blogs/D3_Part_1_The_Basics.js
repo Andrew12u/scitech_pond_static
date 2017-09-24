@@ -4,7 +4,6 @@ import React from 'react';
 import FormGroup from 'react-bootstrap/lib/FormGroup';
 import FormControl from 'react-bootstrap/lib/FormControl';
 import Form from  'react-bootstrap/lib/Form';
-import ControlLabel from 'react-bootstrap/lib/ControlLabel';
 import Col from 'react-bootstrap/lib/Col';
 import HelpBlock from 'react-bootstrap/lib/HelpBlock';
 import Button from  'react-bootstrap/lib/Button';
@@ -21,7 +20,6 @@ import "./css/D3_Part_1_The_Basics.css"
 //D3 Stuff
 import { select } from 'd3-selection'
 import { scaleLinear, scaleBand } from 'd3-scale'
-import { max } from 'd3-array'
 import { axisLeft, axisBottom } from 'd3-axis'
 
 
@@ -51,7 +49,6 @@ class BarGraph extends React.Component {
   createBarChart() {
     const node = this.node
     const dataMax = this.getMaxInSuppliedValues();
-    const barHeightMax = this.props.size[1];
     let width = this.state.svg_width - this.state.svg_margins.left - this.state.svg_margins.right;
     let height = this.state.svg_height - this.state.svg_margins.top - this.state.svg_margins.bottom;
 

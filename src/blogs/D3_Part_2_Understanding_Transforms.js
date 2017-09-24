@@ -6,12 +6,8 @@ import FormControl from 'react-bootstrap/lib/FormControl';
 import Form from  'react-bootstrap/lib/Form';
 import ControlLabel from 'react-bootstrap/lib/ControlLabel';
 import Col from 'react-bootstrap/lib/Col';
-import HelpBlock from 'react-bootstrap/lib/HelpBlock';
-import Button from  'react-bootstrap/lib/Button';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
-import ListGroup from 'react-bootstrap/lib/ListGroup';
-import ListGroupItem from 'react-bootstrap/lib/ListGroupItem';
 
 //My CSS stuff
 import "./css/General_Blog.css"
@@ -19,13 +15,9 @@ import "./css/D3_Part_2_Understanding_Transforms.css"
 
 //D3 Stuff
 import { select } from 'd3-selection'
-import { scaleLinear, scaleBand } from 'd3-scale'
-import { max } from 'd3-array'
-import { axisLeft, axisBottom } from 'd3-axis'
 
 //Math stuff
 const MathJax = require('react-mathjax')
-const tex = `\\begin{pmatrix}a & b\\\\\\ c & d\\end{pmatrix}`
 
 class SVGPrediction extends React.Component {
   constructor(props){
@@ -1068,9 +1060,6 @@ class TransformExample extends React.Component {
 
 
 class D3_Part_2_Understanding_Tranforms extends React.Component {
-  constructor(props){
-     super(props);
-  }
   render() {
     return(
       <Grid>

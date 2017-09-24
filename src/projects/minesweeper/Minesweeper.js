@@ -1,17 +1,9 @@
 import React from 'react';
 
 /*REACT Bootstrap Stuff*/
-import FormGroup from 'react-bootstrap/lib/FormGroup';
-import FormControl from 'react-bootstrap/lib/FormControl';
-import Form from  'react-bootstrap/lib/Form';
-import ControlLabel from 'react-bootstrap/lib/ControlLabel';
 import Col from 'react-bootstrap/lib/Col';
-import HelpBlock from 'react-bootstrap/lib/HelpBlock';
-import Button from  'react-bootstrap/lib/Button';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
-import ListGroup from 'react-bootstrap/lib/ListGroup';
-import ListGroupItem from 'react-bootstrap/lib/ListGroupItem';
 
 //My CSS stuff
 import "../css/General_Project.css"
