@@ -9,11 +9,11 @@ import Blogs from './main/Blogs';
 import Projects from './main/Projects';
 import Contact from './main/Contact';
 import Home from './main/Home';
-import Login from './main/Login';
-import Register from './main/Register';
+//import Login from './main/Login';
+//import Register from './main/Register';
 import Blog from './Blog';
 import Project from './Project';
-import Signout from './main/Signout';
+//import Signout from './main/Signout';
 
 //react nav stuff
 import { BrowserRouter, Route} from 'react-router-dom'
@@ -47,14 +47,14 @@ function DefaultMenu(){
                 <LinkContainer to="/blogs">
                   <NavItem eventKey={2}> Blog </NavItem>
                 </LinkContainer>
+                <LinkContainer to="/projects">
+                  <NavItem eventKey={3}> Projects </NavItem>
+                </LinkContainer>
                 <LinkContainer to="/about">
                   <NavItem eventKey={3}> About </NavItem>
                 </LinkContainer>
                 <LinkContainer to="/contact">
                   <NavItem eventKey={4}> Contact </NavItem>
-                </LinkContainer>
-                <LinkContainer to="/login">
-                  <NavItem eventKey={5}> Login </NavItem>
                 </LinkContainer>
               </Nav>
             </Navbar.Collapse>
@@ -65,14 +65,14 @@ function DefaultMenu(){
         <Route exact path = "/about" component = {About} />
         <Route exact path = "/blogs" component = {Blogs} />
         <Route exact path = "/contact" component = {Contact} />
-        <Route exact path = "/login" component = {Login} />
-        <Route exact path = "/register" component = {Register} />
         <Route exact path = "/blog/:blogId" component = {Blog} />
+        <Route exact path = "/projects" component = {Projects} />
+        <Route exact path = "/project/:projectId" component = {Project} />
      </div>
     </BrowserRouter>
   );
 }
-
+/*
 function LoggedInMenu(){
   return(
       <BrowserRouter history = {createBrowserHistory()}>
@@ -119,10 +119,12 @@ function LoggedInMenu(){
       </BrowserRouter>
   );
 }
+*/
 
 function NavMenu(){
-  if(id_lib.isUserLoggedIn()) { return <LoggedInMenu/>}
-  else { return <DefaultMenu/> }
+  // if(id_lib.isUserLoggedIn()) { return <LoggedInMenu/>}
+  // else { return <DefaultMenu/> }
+  return <DefaultMenu/>
 }
 
 ReactDOM.render((
