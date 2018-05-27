@@ -4,7 +4,8 @@
     { "name":"Enabling_SSL_for_a_Static_S3_Website", "type": "S3", "description": "Goes over how to enable SSL for a static S3 website.", "date": "2017-09-13"},
     { "name":"D3_Part_1_The_Basics", "type": "D3", "description": "Creating a D3 Bar Chart, wrapped in a React Component", "date": "2017-09-18"},
     { "name":"D3_Part_2_Understanding_Transforms", "type": "D3", "description": "Understanding the SVG transform attribute", "date": "2017-09-23"},
-    { "name":"A_Blog_Legacy", "type": "Old Stuff", "description": "My Old Blog!", "date": "2017-09-24"}
+    { "name":"A_Blog_Legacy", "type": "Old Stuff", "description": "My Old Blog!", "date": "2017-09-24"},
+    { "name":"QC_For_Dummies__A_Review", "type": "QC", "description": "A review of an old QC book", "date": "2018-05-05"}
   ],
   "meta": [
     {
@@ -14,7 +15,7 @@
       "label": "C"
     },
     {
-      "value": 1,
+      "value": 2,
       "color":"#7fffd4",
       "highlight": "#FF5A5E",
       "label": "C#"

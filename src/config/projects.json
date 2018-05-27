@@ -1,10 +1,11 @@
 {
   "projects": [
-    { "name":"Minesweeper", "type": "ReactJS", "description": "Minesweeper in ReactJS Form!", "date": "2017-09-24"}
+    { "name":"Minesweeper", "type": "ReactJS", "description": "Minesweeper in ReactJS Form!", "date": "2017-09-24"},
+    { "name":"RadarChartDemo", "type": "D3", "description": "Demo of a RadarChart", "date": "2018-05-09"}
   ],
   "meta": [
     {
-      "value": 1,
+      "value": 2,
       "color":"#00ced1",
       "highlight": "#FF5A5E",
       "label": "JavaScript"

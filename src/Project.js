@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import EmptyObject from './EmptyObject';
 //Projects
 import Minesweeper from './projects/minesweeper/Minesweeper';
+import RadarChartDemo from './projects/radarchartdemo/RadarChartDemo';
 
 const PROJECTS = {
-  Minesweeper: Minesweeper
+  Minesweeper: Minesweeper,
+  RadarChartDemo: RadarChartDemo
 }
 
 
@@ -23,7 +25,7 @@ class Project extends Component {
   }
   render() {
     return (
-      <this.state.component />
+      <this.state.component urlParams={this.props.match.params} urlQueryString={this.props.location.search}/>
     );
   }
 }

@@ -1,0 +1,31 @@
+.pdca_multiloop {
+  background-image: url("../img/PDCA-Multi-Loop.png");
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 1600px;
+}
+.kano_graph {
+  background-image: url("../img/FullKanoModel.png");
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.sipoc_diagram {
+  background-image: url("../img/SIPOC_Diagram.PNG");
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 1600px;
+}
+.sipoc_diagram2 {
+  background-image: url("../img/sipocdiagram.svg");
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 1600px;
+}
+
+.VSM_Graph {
+  background-image: url("../img/ValueStreamMapParts.png");
+  background-repeat: no-repeat;
+  height: 700;
+  width: 1600px;
+}
