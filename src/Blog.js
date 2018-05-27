@@ -5,13 +5,17 @@ import Enabling_SSL_for_a_Static_S3_Website from './blogs/Enabling_SSL_for_a_Sta
 import D3_Part_1_The_Basics from './blogs/D3_Part_1_The_Basics';
 import D3_Part_2_Understanding_Transforms from './blogs/D3_Part_2_Understanding_Transforms';
 import A_Blog_Legacy from './blogs/A_Blog_Legacy';
+import Understanding_A_WCF_Workflow_Application from './blogs/Understanding_A_WCF_Workflow_Application';
+import QC_For_Dummies__A_Review from './blogs/QC_For_Dummies__A_Review';
 
 const BLOGS = {
    a_killer_insertion_sort: a_killer_insertion_sort,
    Enabling_SSL_for_a_Static_S3_Website: Enabling_SSL_for_a_Static_S3_Website,
    D3_Part_1_The_Basics: D3_Part_1_The_Basics,
    D3_Part_2_Understanding_Transforms: D3_Part_2_Understanding_Transforms,
-   A_Blog_Legacy: A_Blog_Legacy
+   A_Blog_Legacy: A_Blog_Legacy,
+   Understanding_A_WCF_Workflow_Application: Understanding_A_WCF_Workflow_Application,
+   QC_For_Dummies__A_Review: QC_For_Dummies__A_Review
 }
 
 

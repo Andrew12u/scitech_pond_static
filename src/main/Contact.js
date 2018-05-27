@@ -22,7 +22,7 @@ class Contact extends React.Component {
 
                 <h4 id="contact_subheader">For Professional Inquiries:</h4>
                 <ul>
-                  <li> <h5 id="contact_professional"><strong>E-mail: </strong> Andrew.Izu.Professional (at) gmail (dot) com </h5> </li>
+                  <li> <h5 id="contact_professional"><strong>E-mail: </strong> aizu (at) scitechpond (dot) com </h5> </li>
                 </ul>
               </Col>
             </Row>
@@ -30,7 +30,7 @@ class Contact extends React.Component {
               <Col xs={12}>
                 <h4 id="contact_subheader">For All Other Inquiries:</h4>
                 <ul>
-                  <li> <h5 id="contact_professional"><strong>E-mail: </strong> Andrew.Izu.Academic (at) gmail (dot) com </h5> </li>
+                  <li> <h5 id="contact_professional"><strong>E-mail: </strong> aizu (at) scitechpond (dot) com </h5> </li>
                 </ul>
               </Col>
             </Row>
